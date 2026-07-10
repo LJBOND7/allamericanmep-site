@@ -115,6 +115,7 @@ body {
   background: var(--paper);
   color: var(--body);
   -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
 }
 h1, h2, h3 {
   font-family: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
@@ -167,6 +168,17 @@ nav.main a:hover { color: var(--ink); }
 .btn-ghost:hover { border-color: var(--on-navy); }
 .header-cta { margin-left: 8px; white-space: nowrap; }
 @media (max-width: 900px) { nav.main { display: none; } .header-cta { margin-left: auto; } }
+@media (max-width: 600px) {
+  header.site .wrap { gap: 10px; min-height: 60px; }
+  .brand { gap: 10px; }
+  .brand img { height: 34px; }
+  .brand-name { font-size: 19px; }
+  .brand-name small { font-size: 8.5px; letter-spacing: 0.1em; }
+  .header-cta { padding: 9px 12px; font-size: 14px; }
+  .hero .wrap { padding-top: 56px; padding-bottom: 48px; }
+  .hero-stats div { padding-right: 0; margin-right: 24px; }
+  section { padding: 56px 0; }
+}
 
 /* ---- hero ---- */
 .hero { background: var(--navy); color: var(--on-navy-dim); }
